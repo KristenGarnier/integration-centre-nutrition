@@ -1,0 +1,28 @@
+{
+  "name": "inteWordpress",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.0.3",
+    "bootstrap": "^3.3.5",
+    "css-mqpacker": "^4.0.0",
+    "cssnano": "^3.3.1",
+    "es6-promise": "^3.0.2",
+    "font-awesome": "^4.4.0",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss": "^5.0.9",
+    "precss": "^1.2.3",
+    "rucksack-css": "^0.8.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.11"
+  }
+}
