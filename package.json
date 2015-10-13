@@ -17,12 +17,14 @@
     "font-awesome": "^4.4.0",
     "gulp": "^3.9.0",
     "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
     "postcss": "^5.0.9",
     "precss": "^1.2.3",
     "rucksack-css": "^0.8.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.9.11"
+    "browser-sync": "^2.9.11",
+    "gulp-rename": "^1.2.2"
   }
 }

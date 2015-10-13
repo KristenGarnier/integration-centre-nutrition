@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var rename = require("gulp-rename");
+var sass = require('gulp-sass');
 
 
 var processor = [
@@ -13,19 +15,28 @@ var processor = [
 ];
 
 gulp.task('css', function () {
+
     var postcss = require('gulp-postcss');
     return gulp.src('src/**/style.css')
         .pipe(postcss(processor))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('build/'));
+        .pipe(sourcemaps.write('./build'))
+        .pipe(gulp.dest('build/'))
+        .pipe(browserSync.stream());
 });
 
-gulp.task('watch', ['css'], function () {
+gulp.task('html', function(){
+    gulp.src('./*.html')
+        .pipe(gulp.dest('./build'));
+});
 
-    browserSync({
-        server: "."
+gulp.task('watch', ['css', 'html'],  function () {
+
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
     });
 
-    gulp.watch("src/css/**/*.css", ['css']).on('change', reload);
-    gulp.watch("*.html").on('change', reload);
+    gulp.watch("src/css/**/*.css", ['css']);
+    gulp.watch("*.html", ['html']).on('change', reload);
 });
