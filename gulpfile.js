@@ -4,6 +4,8 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 
 var processor = [
@@ -24,12 +26,21 @@ gulp.task('css', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('img', function () {
+    return gulp.src('src/img/*')
+        .pipe(imagemin({
+            progressive: true,
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('build/img'));
+});
+
 gulp.task('html', function(){
     gulp.src('./*.html')
         .pipe(gulp.dest('./build'));
 });
 
-gulp.task('watch', ['css', 'html'],  function () {
+gulp.task('watch', ['css', 'html', 'img'],  function () {
 
     browserSync.init({
         server: {
@@ -37,6 +48,6 @@ gulp.task('watch', ['css', 'html'],  function () {
         }
     });
 
-    gulp.watch("src/css/**/*.css", ['css']);
-    gulp.watch("*.html", ['html']).on('change', reload);
+    gulp.watch("src/css/**/*.css", ['css', 'img']);
+    gulp.watch("*.html", ['html', 'img']).on('change', reload);
 });

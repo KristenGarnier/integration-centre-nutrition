@@ -1,0 +1,38 @@
+section#accueil{
+    height: 90vh;
+    background: url('../img/bg.png') no-repeat;
+    background-size:cover ;
+
+    h1 {
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: 1px;
+        margin-top: 25vh;
+    }
+
+    p {
+        width: 40vw;
+        font-weight: 300;
+        margin-top : 4vh;
+    }
+
+    button {
+        margin-top: 3vh;
+        @extend redButton;
+        i{
+            margin-left: 1rem;
+        }
+
+        &:hover{
+        background-color:$redDarken;
+        }
+        &:focus{
+        background-color:$redDarken;
+        outline:none;
+        }
+        &:active{
+        background-color:$redDarken;
+        outline:none;
+        }
+    }
+}
