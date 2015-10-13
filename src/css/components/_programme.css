@@ -2,6 +2,11 @@ section#programme {
     padding: 10vh 0;
     h2 {
         font-weight: 700;
+        margin-bottom: 10vh;
+
+        &::before{
+            @extend redUnderline;
+        }
     }
 
     .item-prog{

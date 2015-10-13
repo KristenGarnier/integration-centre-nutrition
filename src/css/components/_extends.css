@@ -7,3 +7,11 @@
     color:white;
     transition: background-color ease 0.2S;
 }
+
+@define-extend redUnderline {
+    content:'';
+    position: absolute;
+    height: 30vh;
+    transform:translate(-40px, -70px) rotate(90deg);
+    border: $redPrimary solid 1px;
+}
