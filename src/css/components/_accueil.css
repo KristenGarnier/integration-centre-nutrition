@@ -17,22 +17,8 @@ section#accueil{
     }
 
     button {
-        margin-top: 3vh;
         @extend redButton;
-        i{
-            margin-left: 1rem;
-        }
 
-        &:hover{
-        background-color:$redDarken;
-        }
-        &:focus{
-        background-color:$redDarken;
-        outline:none;
-        }
-        &:active{
-        background-color:$redDarken;
-        outline:none;
-        }
+        @mixin button $redDarken;
     }
 }
