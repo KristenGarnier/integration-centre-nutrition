@@ -5,7 +5,17 @@
     padding: 1vh 2vw;
     text-transform: uppercase;
     color:white;
-    transition: background-color ease 0.2S;
+    transition: all ease 0.2S;
+}
+
+@define-extend whiteButton {
+    border:none;
+    background-color: white;
+    border-radius:0;
+    padding: 1vh 2vw;
+    text-transform: uppercase;
+    color: $blueLight;
+    transition: all ease 0.2S;
 }
 
 @define-extend redUnderline {
@@ -14,4 +24,12 @@
     height: 30vh;
     transform:translate(-40px, -70px) rotate(90deg);
     border: $redPrimary solid 1px;
+}
+
+@define-extend whiteUnderline {
+    content:'';
+    position: absolute;
+    height: 30vh;
+    transform:translate(-40px, -70px) rotate(90deg);
+    border: white solid 1px;
 }
