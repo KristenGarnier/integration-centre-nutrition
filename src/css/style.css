@@ -6,7 +6,9 @@
 
 @import "components/colors";
 @import "components/extends";
+@import "components/mixins";
 @import "components/menu";
 @import "components/accueil";
 @import "components/programme";
+@import "components/equipe";
 

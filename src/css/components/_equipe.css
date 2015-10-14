@@ -1,0 +1,38 @@
+section#equipe{
+    padding-top: 10vh;
+    height: 100vh;
+    background-image: radial-gradient(47% 166%, #BFDAE9 44%, #B6CCE1 100%);
+    overflow: hidden;
+
+    h2 {
+        font-weight: 700;
+        margin-bottom: 10vh;
+        color:white;
+
+        &::before{
+            @extend whiteUnderline;
+        }
+    }
+
+    button{
+        @extend whiteButton;
+        @mixin button #F7F7F7;
+    }
+
+    h3{
+        color: white;
+        margin-bottom: 3vh;
+        font-size: 3.5rem
+    }
+
+    p{
+        color: white;
+        width: 80%;
+        font-weight: 300;
+    }
+
+    img{
+        margin-top: -15vh;
+    }
+}
+
