@@ -1,0 +1,17 @@
+@define-mixin button $color {
+    margin-top: 3vh;
+    i{
+        margin-left: 1rem;
+    }
+    &:hover{
+        background-color: $color;
+    }
+    &:focus{
+        background-color: $color;
+        outline:none;
+    }
+    &:active{
+        background-color: $color;
+        outline:none;
+    }
+}
