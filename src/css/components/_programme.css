@@ -1,5 +1,5 @@
 section#programme {
-    padding: 10vh 0;
+    @extend section;
 
     @mixin redTitle;
 

@@ -1,0 +1,6 @@
+#temoignage{
+    @extend section;
+    background-color: $lightGrey ;
+
+    @mixin redTitle;
+}

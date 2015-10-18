@@ -1,6 +1,5 @@
 #suivi {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    @extend section;
 
     @mixin redTitle;
 
