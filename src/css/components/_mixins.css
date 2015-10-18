@@ -15,3 +15,26 @@
         outline:none;
     }
 }
+
+@define-mixin whiteTitle {
+    h2 {
+        font-weight: 700;
+        margin-bottom: 10vh;
+        color:white;
+
+        &::before{
+         @extend whiteUnderline;
+        }
+    }
+}
+
+@define-mixin redTitle {
+    h2 {
+        font-weight: 700;
+        margin-bottom: 10vh;
+
+        &::before{
+            @extend redUnderline;
+         }
+    }
+}

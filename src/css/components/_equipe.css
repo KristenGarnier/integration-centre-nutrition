@@ -4,15 +4,7 @@ section#equipe{
     background-image: radial-gradient(47% 166%, #BFDAE9 44%, #B6CCE1 100%);
     overflow: hidden;
 
-    h2 {
-        font-weight: 700;
-        margin-bottom: 10vh;
-        color:white;
-
-        &::before{
-            @extend whiteUnderline;
-        }
-    }
+    @mixin whiteTitle;
 
     button{
         @extend whiteButton;

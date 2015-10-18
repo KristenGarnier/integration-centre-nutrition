@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);*/
 
 * {
     font-family: "Roboto", sans-serif;
@@ -11,4 +11,5 @@
 @import "components/accueil";
 @import "components/programme";
 @import "components/equipe";
+@import "components/suivi"
 

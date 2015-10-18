@@ -1,0 +1,40 @@
+#suivi {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    @mixin redTitle;
+
+    h4 {
+        margin-top: 25px;
+    }
+
+    div.explain{
+        margin-top: 5vh;
+        margin-bottom : 5vh;
+        color: $textColor;
+    }
+
+    h3{
+        font-weight : 300;
+        color : $redPrimary;
+        i {
+            margin-left: 1rem;
+        }
+    }
+
+    h5{
+        font-size: 1.7rem;
+        margin: 3vh 0;
+        color : $textColor;
+    }
+
+    p {
+        color : $textColor;
+        font-weight: 300;
+    }
+
+    img.fleche {
+        margin-top:150px
+    }
+
+}
