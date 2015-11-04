@@ -3,4 +3,32 @@
     background-color: $lightGrey ;
 
     @mixin redTitle;
+
+    h5{
+        font-size: 2rem;
+        font-weight: 700;
+
+        &:before{
+            content: '-';
+            margin-right: 1rem;
+            color: $redPrimary;
+        }
+    }
+
+    p {
+        font-family: 'times';
+        font-style: italic;
+        color: $textGrey;
+
+        &:before{
+            content: '"';
+            margin-right: 1rem;
+        }
+
+        &:after{
+            content: '"';
+            margin-left: 1rem;
+        }
+    }
+
 }

@@ -23,7 +23,11 @@
         color:white;
 
         &::before{
-         @extend whiteUnderline;
+             content:'';
+             position: absolute;
+             height: 30vh;
+             transform:translate(-40px, -70px) rotate(90deg);
+             border: white solid 1px;
         }
     }
 }
@@ -34,7 +38,11 @@
         margin-bottom: 10vh;
 
         &::before{
-            @extend redUnderline;
+             content:'';
+             position: absolute;
+             height: 30vh;
+             transform:translate(-40px, -70px) rotate(90deg);
+             border: $redPrimary solid 1px;
          }
     }
 }

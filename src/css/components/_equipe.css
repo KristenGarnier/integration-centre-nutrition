@@ -1,5 +1,6 @@
 section#equipe{
-    @extend section;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     height: 100vh;
     background-image: radial-gradient(47% 166%, #BFDAE9 44%, #B6CCE1 100%);
     overflow: hidden;

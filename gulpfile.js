@@ -2,10 +2,9 @@ var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-var rename = require("gulp-rename");
-var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var debug = require('gulp-debug');
 
 
 var processor = [
@@ -21,8 +20,7 @@ gulp.task('css', function () {
     var postcss = require('gulp-postcss');
     return gulp.src('src/**/style.css')
         .pipe(postcss(processor))
-        .pipe(sourcemaps.write('./build'))
-        .pipe(gulp.dest('build/'))
+        .pipe(gulp.dest('./build'))
         .pipe(browserSync.stream());
 });
 
@@ -40,7 +38,7 @@ gulp.task('html', function(){
         .pipe(gulp.dest('./build'));
 });
 
-gulp.task('watch', ['css', 'html', 'img'],  function () {
+gulp.task('watch', ['css','html'],  function () {
 
     browserSync.init({
         server: {

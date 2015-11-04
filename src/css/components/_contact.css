@@ -1,0 +1,33 @@
+#contact{
+    @extend section;
+
+    background: $redPrimary;
+    margin-top: -1vh;
+
+    .page {
+        background: white;
+        margin-top: -30rem;
+        padding: 5rem 10rem;
+    }
+
+    input, textarea {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: $redPrimary 2px solid;
+        margin-top: 10vh !important;
+    }
+
+    button {
+        @extend redButton;
+        @mixin button $redDarken;
+        margin-top: 5rem;
+    }
+
+
+        ::-webkit-input-placeholder { color:black; font-weight: 700; }
+        ::-moz-placeholder { color:black; } /* firefox 19+ */
+        :-ms-input-placeholder { color:black; } /* ie */
+        input:-moz-placeholder { color:black; }
+
+}

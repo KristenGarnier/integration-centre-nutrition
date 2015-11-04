@@ -9,8 +9,10 @@
 @import "components/mixins";
 @import "components/menu";
 @import "components/accueil";
-@import "components/programme";
-@import "components/equipe";
 @import "components/suivi";
 @import "components/temoignage";
+@import "components/programme";
+@import "components/equipe";
+@import "components/maps";
+@import "components/contact";
 
