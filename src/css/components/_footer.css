@@ -1,0 +1,8 @@
+#footer{
+    @extend section;
+    background: white;
+
+    border-top: 8px solid #EDEDED;
+
+    margin-top: -10vh;
+}

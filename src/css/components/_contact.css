@@ -1,13 +1,14 @@
 #contact{
     @extend section;
 
-    background: $redPrimary;
+    background: rgba(152,37,41,0.86);
     margin-top: -1vh;
 
     .page {
         background: white;
-        margin-top: -30rem;
+        margin-top: -20rem;
         padding: 5rem 10rem;
+        box-shadow: 0px 0px 12px 0px rgba(174,174,174,0.50);
     }
 
     input, textarea {

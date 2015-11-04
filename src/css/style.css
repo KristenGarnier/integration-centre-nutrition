@@ -4,6 +4,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+.page{
+    overflow:hidden;
+}
+
 @import "components/colors";
 @import "components/extends";
 @import "components/mixins";
@@ -15,4 +19,5 @@
 @import "components/equipe";
 @import "components/maps";
 @import "components/contact";
+@import "components/footer";
 
