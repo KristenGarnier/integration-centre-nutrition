@@ -1,4 +1,5 @@
 section#equipe{
+    position: relative;
     padding-top: 10vh;
     padding-bottom: 10vh;
     height: 100vh;
@@ -26,6 +27,36 @@ section#equipe{
 
     img{
         margin-top: -15vh;
+    }
+
+    .bar-component{
+        position: absolute;
+        top : 90vh;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 12px 0px rgba(162,162,162,0.50);
+        .slider-bar{
+            text-transform: uppercase;
+            padding: 1rem 0.5rem;
+            border-right: 1px $darkGrey solid;
+            font-weight: 700;
+            color: $blueLight;
+            transition: all ease 0.2s;
+            cursor: pointer;
+            &:last-child{
+                border-right: none;
+            }
+
+            &:hover{
+                 background: $blueLight;
+                color: white;
+             }
+        }
+    }
+
+
+    .Wallop-list {
+        overflow: visible;
     }
 }
 

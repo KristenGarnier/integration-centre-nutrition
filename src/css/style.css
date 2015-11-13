@@ -8,6 +8,12 @@
     overflow:hidden;
 }
 
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
+
+@import '../../node_modules/wallop/css/wallop.css';
+@import '../../node_modules/wallop/css/wallop--slide.css';
+
 @import "components/colors";
 @import "components/extends";
 @import "components/mixins";
