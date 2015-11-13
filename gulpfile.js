@@ -37,12 +37,10 @@ gulp.task('scripts', function() {
             debug : !gulp.env.production
         }))
         .pipe(uglify())
-        .pipe(gulp.dest('./build/js'))
+        .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task('move', function(){
-    // the base option sets the relative root for the set of files,
-    // preserving the folder structure
     gulp.src(cssDependency)
         .pipe(gulp.dest('build/fonts')
     );
