@@ -52,6 +52,10 @@ section#equipe{
                 color: white;
              }
         }
+        .active{
+            background: $blueLight;
+            color: white;
+        }
     }
 
 

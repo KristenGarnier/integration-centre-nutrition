@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "gulp serve",
     "build": "npm install && gulp build",
-    "jumpstart": "npm install && gulp build && gulp watch"
+    "jumpstart": "npm install && gulp build && gulp serve"
   },
   "author": "",
   "license": "ISC",
