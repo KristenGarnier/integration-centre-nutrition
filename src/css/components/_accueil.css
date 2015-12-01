@@ -8,17 +8,31 @@ section#accueil{
         line-height: 1.3;
         letter-spacing: 1px;
         margin-top: 25vh;
+        @media screen and (max-width: 991px){
+            margin-top: 10rem;
+        }
     }
 
     p {
         width: 40vw;
         font-weight: 300;
         margin-top : 4vh;
+        @media screen and (max-width: 991px){
+            width: 100%;
+        }
     }
 
     button {
         @extend redButton;
 
         @mixin button $redDarken;
+
+        @media screen and (max-width: 991px){
+            margin-bottom: 10rem;
+        }
+    }
+
+    @media screen and (max-width: 991px){
+        height: auto;
     }
 }

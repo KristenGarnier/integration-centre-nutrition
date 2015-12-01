@@ -1,10 +1,12 @@
+global.jQuery = global.$ = require('jquery');
+var matchHeight = require('jquery-match-height');
 var Wallop = require('Wallop');
 
 var WallopElement = document.querySelector('.Wallop');
 var slider = new Wallop(WallopElement);
 var first  = false;
 var lastTarget = '';
-var originClassName = 'col-sm-3 text-center slider-bar';
+var originClassName = 'col-sm-3 col-xs-6 text-center slider-bar';
 
 document.querySelector('.bar-component').addEventListener('click', function(e){
         if(e.target != this){
@@ -29,3 +31,17 @@ document.querySelector('.bar-component').addEventListener('click', function(e){
 
 var WallopElementTem = document.querySelector('.WallopTem');
 var temoignages = new Wallop(WallopElementTem);
+
+
+var options = {
+    byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+};
+
+$(function() {
+    $('.item-prog').matchHeight(options);
+});
+
+require('bootstrap')

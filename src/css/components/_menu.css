@@ -12,6 +12,13 @@ header{
             background-color: white;
             a.navbar-brand#navbar-brand {
                 margin-left: 25vw;
+
+                @media screen and (max-width : 1234px){
+                    margin-left: 5rem;
+                }
+            }
+            @media screen and (max-width : 976px){
+                width: 100%;
             }
         }
         i{
